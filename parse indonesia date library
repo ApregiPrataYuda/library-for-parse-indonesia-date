@@ -1,0 +1,10 @@
+function indo_date($date)
+{
+   $d = substr($date, 8, 2,);
+   $m = substr($date, 5, 2,);
+   $Y = substr($date, 0, 4,);
+   return $d . '-' . $m . '-' . $Y;
+}
+
+//bagaimana cara memanggilnya lihat caranya di bawah
+<?= indo_date($value->dateline) ?>
